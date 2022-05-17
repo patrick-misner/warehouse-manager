@@ -30,9 +30,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="debug">
-  <main class="container-fluid">
+<body class="bg-light">
 
+  <header>
+    <header class="bg-primary p-3 border border-warning border-3">
+      <h1 class="text-light text-shadow text-center">WAREHOUSE MANAGER</h1>
+    </header>
+
+  </header>
+  <main class="container">
+    <div class="row">
+      <div class="col-12 text-center p-1"><h4>Filter packages by</h4></div>
+<div class="col-12 text-center p-3">
+  <button type="button" class="btn btn-primary m-3" onclick="filter('heavy')">Heavy Packages</button>
+  <button type="button" class="btn btn-primary m-3" onclick="filter('fragile')">Fragile Packages</button>
+  <button type="button" class="btn btn-primary m-3" onclick="filter('priority')">Priority Packages</button>
+</div>
+    </div>
+<div class="col-12 text-center p-1">
+  <button type="button" class="btn btn-danger" onclick="clearFilter()">Clear Filter</button>
+</div>
+
+    <div id="pkg-display" class="row p-2">
+
+
+
+      
+    </div>
 
 
   </main>
